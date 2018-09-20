@@ -57,4 +57,4 @@ I have a fair bit of data-janitoring and data collection still ahead.
  - **Approximate rail and bus travel times**
    The CTA has an API with real-time bus and train locations and arrival times. I can use this to gather data and approximate the travel time between each bus stop or train station. This API has a limit of 10,000 calls per day so I will not even come close to covering the entire system. I will need to choose a few routes and lines and gather data for a few hours and then extrapolate from there. This method isn't great for travel time accuracy, but this was the best option given the data available and limited time. 
    
- And once data collection is complete I'll start building my network. I'll be looking for intersections and distances between the different transit mode datasets - the beginnings of a network. 
+ And once data collection is complete I'll start building my network. I'll be looking for intersections and distances between the different transit mode datasets - the beginnings of a graph. 
