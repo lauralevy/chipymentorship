@@ -9,7 +9,7 @@ I want to improve my Python skills.
 
 ## My Project
 
-I would like to explore different modes of transportation in Chicago and the network they form. I am particularly interested in incoporating Divvy. Google Maps does not include Divvy as a transit option, so I want to see if I can incorporate bike share into the routing for all or part of a given trip.  
+I would like to explore different modes of transportation in Chicago and the network they form. I am particularly interested in incorporating Divvy. Google Maps does not include Divvy as a transit option, so I want to see if I can incorporate bike share into the routing for all or part of a given trip. I also want to look at ridership data to identify popular routes. 
 
 ## Research Python Geospatial Packages
 
@@ -33,12 +33,12 @@ I will be sourcing most of my datasets from Chicago's Open Data Portal. Here is 
  - **CTA Rail**:
      - Stations (shapefile)
      - Lines (shapefile)
-     - Daily ridersip by station (CSV)
+     - Daily ridership by station (CSV)
         - I'm not able to access this via API because the station IDs in the Station shapefile don't match what's available in the ridership API. Fun!
  - **CTA Bus**:
      - Stops (shapefile)
      - Routes (shapefile)
-     - Daily ridersip by route (API)
+     - Daily ridership by route (API)
  - **Divvy**:
      - Dock locations (CSV for historical, API for real-time)
      - Historical rides (CSV)
@@ -50,42 +50,10 @@ As I mentioned above, I'll also be using network data from Open Street Map via O
 
 ## What's Next?
 
-
-
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/lauralevy/chipymentorship/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lauralevy/chipymentorship/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+I have a fair bit of data-janitoring and data collection still ahead. 
+ - **Reconcile CTA Rail Ridership with CTA Station locations**
+    Because these two datasets to not have a common key to identify stations, I will need to find an alternate way to join them. I attempted to use `station_name` but these are not consistent and are not unique to each station. For example, the Damen stop on the Blue Line is different from the Damen stop on the Red Line. 
+ - **Approximate rail and bus travel times**
+   The CTA has an API with real-time bus and train locations and arrival times. I can use this to gather data and approximate the travel time between each bus stop or train station. This API has a limit of 10,000 calls per day so I will not even come close to covering the entire system. I will need to choose a few routes and lines and gather data for a few hours and then extrapolate from there. This method isn't great for travel time accuracy, but this was the best option given the data available and limited time. 
+   
+ And once data collection is complete I'll start building my network. I'll be looking for intersections and distances between the different transit mode datasets - the beginnings of a network. 
