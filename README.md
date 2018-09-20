@@ -1,6 +1,15 @@
 # Chipy Mentorship Fall 2018: Blog 1
 
+### Why am I here?
+I love maps, but I don't get to work on geospatial problems professionally.
+
+My geospatial skills are out of date.
+
+I want to improve my Python skills.
+
 ## My Project
+
+I would like to explore different modes of transportation in Chicago and the network they form. I am particularly interested in incoporating Divvy. Google Maps does not include Divvy as a transit option, so I want to see if I can incorporate bike share into the routing for all or part of a given trip.  
 
 ## Research Python Geospatial Packages
 
@@ -33,6 +42,7 @@ I will be sourcing most of my datasets from Chicago's Open Data Portal. Here is 
  - **Divvy**:
      - Dock locations (CSV for historical, API for real-time)
      - Historical rides (CSV)
+
 As I mentioned above, I'll also be using network data from Open Street Map via OSMnx. I can change the  `network_type` parameter to get walking and biking networks well. 
 
 
