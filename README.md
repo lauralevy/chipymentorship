@@ -1,11 +1,15 @@
 # Chipy Mentorship Fall 2018: Blog 1
 
 ### Why am I here?
-I love maps, but I don't get to work on geospatial problems professionally.
 
-My geospatial skills are out of date.
+**I love maps, but I don't get to work on geospatial problems professionally.**
+I majored in geography and geospatial science in undergrad, but my post academic life I don't get to work on spatial projects very often. 
 
-I want to improve my Python skills.
+**My geospatial skills are out of date.**
+When I was in school the primary tool for spatial analysis was ArcGIS, an expensive and proprietary suite of software. While ArcGIS is still dominant in the industry, there are now many more open source options available for visualization, manipulation and analysis.
+
+**I want to improve my Python skills.**
+I currently work as an analyst in a very SQL heavy role and am looking to get more comfortable with Python. 
 
 ## My Project
 
@@ -44,9 +48,6 @@ I will be sourcing most of my datasets from Chicago's Open Data Portal. Here is 
      - Historical rides (CSV)
 
 As I mentioned above, I'll also be using network data from Open Street Map via OSMnx. I can change the  `network_type` parameter to get walking and biking networks well. 
-
-
-## Explore GeoPandas
 
 ## What's Next?
 
